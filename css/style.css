@@ -1,0 +1,159 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --mainText: #fff;
+
+  --btnHoverColor: #5fffaf;
+
+  --transparentBG1: #00545d;
+  --transparentBG2: #000729;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url(../images/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/** Header Start */
+header {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px 42px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+header #logoBox .logoText {
+  font-size: 32px;
+  color: var(--mainText);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 22px;
+  color: var(--mainText);
+  border: 2px solid #fff;
+  border-radius: 30px;
+  height: fit-content;
+  padding: 5px 15px;
+  transition: .3s all ease-in-out;
+}
+
+header a:hover {
+  color: var(--btnHoverColor);
+}
+
+/** Nav start */
+nav {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 1%;
+  min-height: 100vh;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(var(--transparentBG1), var(--transparentBG2));
+}
+
+nav img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  scale: 1;
+  transition: .3s all ease-in-out;
+}
+
+nav #iconsBox {
+  display: flex;
+  flex-direction: column;
+}
+
+nav #iconsBox img {
+  width: 40px;
+  height: 40px;
+  margin: 5px 0;
+  cursor: pointer;
+  scale: 1;
+  transition: .3s all ease-in-out;
+}
+
+nav #actionIconsBox {
+  display: flex;
+  flex-direction: column;
+}
+
+nav #actionIconsBox img {
+  width: 40px;
+  height: 40px;
+  margin: 5px 0;
+  cursor: pointer;
+  scale: 1;
+  transition: .3s all ease-in-out;
+}
+
+nav img:hover,
+nav #iconsBox img:hover,
+nav #actionIconsBox img:hover {
+  scale: 1.2;
+}
+
+/** Section Start */
+section {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+section h4 {
+  font-size: 22px;
+  color: var(--mainText);
+}
+
+section h2 {
+  font-size: 72px;
+  color: var(--mainText);
+  margin-bottom: 50px;
+  line-height: 80px;
+}
+
+section a {
+  text-decoration: none;
+  font-size: 22px;
+  color: var(--mainText);
+  border: 2px solid #fff;
+  border-radius: 30px;
+  height: fit-content;
+  padding: 5px 15px;
+  transition: .3s all ease-in-out;
+}
+
+section a:hover {
+  color: var(--btnHoverColor);
+}
